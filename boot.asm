@@ -1,4 +1,4 @@
 jmp $
 
-times 510-($ - $$) db 0
-db 0x5, 0xaa
+times 510-($-$$) db 0
+db 0x55, 0xaa
