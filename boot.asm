@@ -1,4 +1,4 @@
-mov ah, 0x0e
+mov ah, 0x0e ; test comment
 mov al, 'A'
 int 0x10
 loop:
