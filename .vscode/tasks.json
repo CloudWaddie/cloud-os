@@ -6,7 +6,12 @@
         {
             "label": "build bin",
             "type": "shell",
-            "command": "nasm -f bin boot.asm -o boot.bin"
+            "command": "nasm -f bin boot.asm -o boot.bin",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
