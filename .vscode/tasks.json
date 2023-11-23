@@ -12,6 +12,12 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "qemu-system-x86_64 boot.bin",
+            "problemMatcher": []
         }
     ]
 }
