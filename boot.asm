@@ -3,16 +3,17 @@ mov al, 'A'
 int 0x10
 loop:
     inc al
-    cmp al, 'Z'
-    jg nocaps
+    cmp al, 97
+    jge nocaps
     jmp caps
 caps:
     mov ah, 0x0e
+    add al, 32
     int 0x10
     jmp loop
 nocaps:
-    cmp al, 'Z'
-    jg exit
+    cmp al, 123
+    jge exit
     mov ah, 0x0e
     sub al, 32
     int 0x10
